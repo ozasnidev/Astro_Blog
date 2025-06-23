@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "My Astro Learning Blog";
@@ -24,7 +25,7 @@ const none = "none";
 
 <body>
     <Navigation />
-
+    <main>
     <h1>{pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
 
@@ -33,4 +34,8 @@ const none = "none";
       <li><a href="/posts/post-2/">Post 2</a></li>
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
+    </main>
+    <footer>
+        <Footer />
+    </footer>
 </body>
