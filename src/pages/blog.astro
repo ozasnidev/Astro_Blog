@@ -1,6 +1,25 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "My Astro Learning Blog";
+const none = "none";
 ---
+<style define:vars={{none}}>
+  ul {
+      display:flex;
+      flex-direction: row;
+      gap:1rem;
+      padding: 0 1rem 0 1rem;
+      margin: 0;
+  }
+  li {
+      list-style: var(--none);
+  }
+  li a {
+      text-decoration: var(--none);
+      color: blue;
+  }
+</style>
 
 <body>
     <a href="/">Home</a>
